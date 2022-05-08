@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: blueviolet;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  color: rgb(201, 255, 4);
+  background-image: url("img1.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: yellow;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 20px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Wakjawa's Caves</h1>
+</div>
+
+<div id="navbar">
+	<a href="index.html">Home</a>
+    <a class="active" href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="metals.html">Metals</a>
+</div>
+
+<div class="content">
+    <h1>About Me</h1>
+    <h3>I know you hate long paragraphs so I will make it the shortest for you to read and enjoy.</h3>
+    <hr>
+    <h2>The beginning of this long journey.</h2>
+    <p>Amir Syahmi Mohd Nasir was born in 17th June 2002 in Johor Bahru, Johor, Malaysia. He was a single child of his family, and the eldest grandchildren. His mother, Azraq Mahpol is a Malay Descendant and worked as a bank teller in Johor Bahru. His father, Nasir Abdul Aziz is a Malay Descendant and worked as a preacher and a palm oil plantation settler in Pahang. Currently, Amir reside with his mother and grandfather in Johor.<br><br>His father resides in Jerantut, Pahang since divorce in 2007.</p>
+    <hr>
+    <h2>Education</h2>
+    <p>His education journey started in late 2007 as a kinderndergarten, Johor Bahru. In late 2008, he graduated and proceeds to primary education in 2009 at Sekolah Kebangsaan Bandar Seri Alam 1. He then ended his primary education with flying colours after receiving straight 5A's on his Primary School Assesment Test in 2014. He proceeds in secondary education after accepting the offer from Sekolah Menengah Kebangsaan Dato' Penggawa Timur in 2015 and graduated in 2019 with 7A's on Malaysian Certificate of Education.<br><br>In 2020, he enrolled in Universiti Teknologi Mara (UiTM) in Law. Currently, he's pursuing his studies in Degree level.</p>
+    <hr>
+    <h2>Sickness</h2>
+    <p>He was diagnosed with Chronic Asthma when he was 2 years old. Since then, hospital had became his second home. Dust, extreme hot and cold weather, air pollutants, certain types of food, and emotion were the main triggers. A portable nebulizer always be with him at all times, in case he started to 'whistle' *wink* *wink*. I...I mean, *cough* *cough*.</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
